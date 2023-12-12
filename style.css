@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main > div {
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.meta {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.game {
+    font-size: 2rem;
+    display: flex;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.gameStats {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.gameStats > div {
+    flex: 1;
+}
+
+.gameStats select {
+    padding: 0.5rem 1rem;
+}
+
+.body {
+    flex: 10;
+}
+
+.controls {
+    flex: 1;
+    display: flex;
+}
+
+.controls > div {
+    background-color: gray;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.5);
+    display: none;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.modal > div {
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.modal > div > button {
+    font-size: 2rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    background-color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    .meta {
+        flex: 5;
+    }
+
+    .controls {
+        display: none;
+    }
+}
