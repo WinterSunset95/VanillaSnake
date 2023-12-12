@@ -62,7 +62,7 @@ main > div {
     display: flex;
 }
 
-.controls > div {
+.controls > button {
     background-color: gray;
     border-radius: 1rem;
     margin: 0.5rem;
